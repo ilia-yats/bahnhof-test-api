@@ -17,3 +17,21 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'email' => $faker->email,
     ];
 });
+
+/**
+ * Factory definition for model App\Book.
+ */
+$factory->define(App\Book::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});
+
+/**
+ * Factory definition for model App\Author.
+ */
+$factory->define(App\Author::class, function ($faker) {
+    return [
+        // Fields here
+    ];
+});
