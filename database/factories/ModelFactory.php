@@ -21,17 +21,18 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 /**
  * Factory definition for model App\Book.
  */
-$factory->define(App\Book::class, function ($faker) {
+$factory->define(App\Book::class, function (Faker\Generator $faker) {
     return [
-        // Fields here
+        'title' => $faker->title,
+        'description' => $faker->text,
     ];
 });
 
 /**
  * Factory definition for model App\Author.
  */
-$factory->define(App\Author::class, function ($faker) {
+$factory->define(App\Author::class, function (Faker\Generator $faker) {
     return [
-        // Fields here
+        'name' => $faker->name,
     ];
 });
